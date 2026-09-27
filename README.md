@@ -1,30 +1,62 @@
 # CS Learning Journey
 
-A structured repository for my long-term computer science learning notes, exercises, experiments, and projects.
+My long-term learning log for building strong software-systems fundamentals and understanding modern AI/LLM systems from software to GPU.
 
-## Structure
+## Current Focus — next 4–6 weeks
 
-- `01-foundations/` — core CS foundations and language fundamentals
-- `02-algorithms/` — data structures, algorithms, problem solving
-- `03-systems/` — operating systems, networking, databases, distributed systems
-- `04-ml-ai/` — machine learning, deep learning, LLMs, and related coursework
-  - `cs336/` — Stanford CS336: Language Modeling from Scratch
-- `05-projects/` — hands-on projects and implementations
-- `notes/` — cross-topic learning notes and summaries
-- `resources/` — useful references, reading lists, and links
-- `templates/` — reusable note templates
+### C++ Fundamentals — ~70%
+Goal: move from following patterns in an existing C++ codebase to understanding what the code does and why.
 
-## Workflow
+Current path:
+- syntax, functions, struct/class
+- STL containers
+- pointers and references
+- const
+- stack vs heap
+- object lifetime
+- RAII and ownership
+- smart pointers
+- move semantics
+- templates, lambdas, iterators, concurrency later
 
-1. Learn one concept at a time.
-2. Write concise notes in Markdown.
-3. Add runnable code or exercises when useful.
-4. Commit frequently with descriptive messages.
-5. Use project folders for larger implementations.
+### Stanford CS336 / LLM Systems — ~30%
+Goal: understand language models from implementation and systems layers, not just use LLM APIs.
 
-## Current Focus
+Path: tokenization → Transformer → training → GPU performance → Triton / FlashAttention → distributed training → scaling → data → post-training and evaluation.
 
-- CS336 / language modeling from scratch
-- Systems and backend engineering fundamentals
-- Algorithms and problem solving
-- ML / AI foundations
+## Long-term Map
+
+| Area | Role | Status |
+| --- | --- | --- |
+| C++ | Current engineering foundation | Active |
+| LLM / CS336 | Main AI-systems learning line | Active |
+| Computer Systems / CSAPP | Memory, cache, process, VM, networking | On demand |
+| Distributed Systems | RPC, replication, consistency, fault tolerance | Backlog |
+| Database Systems | Indexes, transactions, MVCC, WAL, query execution | Backlog |
+| AI Systems | GPU, CUDA, Triton, distributed training | Gradual |
+| BCI / EEG | Research branch: non-invasive speech decoding | Research |
+
+## Repository Structure
+
+```text
+cpp/
+systems/
+distributed-systems/
+database/
+ai-systems/
+llm/cs336/
+bci-eeg/
+questions/
+projects/
+templates/
+```
+
+## Learning Loop
+
+**Real question → understand it → write a tiny example → explain it in my own words → commit it.**
+
+The goal is not to collect notes. The goal is to leave evidence that I actually understand and can use each concept.
+
+## Public Repository Rule
+
+Never include proprietary employer code, internal APIs, identifiers, architecture, data, screenshots, or confidential information. Work-inspired examples must be generalized or synthetic.
